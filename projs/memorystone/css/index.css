@@ -1,0 +1,82 @@
+
+body { background-color: rgb(153, 147, 147); 
+
+    background-image: url(../img/cards/indexpattern.png);
+  
+}
+
+.img {
+
+    float: none;
+}
+
+.hidden {
+
+    display: none;
+}
+
+.list  {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.list img {
+
+    float: right;
+}
+
+.details a{
+
+float: right;
+width: 80px;
+height: 40px;
+background: grey;
+transition:  0.5s;
+border-radius: 25px;
+opacity:0.5;
+padding-left: 10px;
+
+}
+a:hover {
+        transform: rotateZ(-360deg);
+        opacity: 1;
+}
+
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    background-image: url('prism.png');
+    border: 10px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+    font-size: 2em;
+    text-align: center;
+  
+}
+
+.details {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+h1 {
+
+
+
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+li {
+  margin: 20px;
+ 
+
+}
+
+li img {
+
+    float: left
+    overflow;
+}

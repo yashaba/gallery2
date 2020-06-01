@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/store.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body onload="init()">
+
+    <div class="container">
+        <!-- <input type="submit" value="submit">
+            <input type="checkbox" name="" id="">
+            <input type="color" name="" id="">
+            <input type="date" name="" id="">
+            <input type="file" name="" id="">
+            <input type="range" name="" id="">
+            <input type="tel" name="" id="">
+            <input type="radio" name="" id=""> -->
+
+
+        <div class="inputs-container hide">
+            <label for="book-name">Book name:</label>
+            <input id="book-name" value="Book Name" class="book-name" type="text">
+            <label for="price">Price:</label>
+            <input id="price" value="price" class="price" min="0" type="number">
+            <label for="content"></label>
+            <textarea id="content" name="content" class="text-box" cols="30" rows="10" style="resize: none;"></textarea>
+
+            <p>Select img: <input class="img-input" type="file" name="" id="file"></p>
+            <button class="add-or-update" onclick="onAddBook()">Add Book</button>
+            <button onclick="showModal()"> Cancel </button>
+        </div>
+
+        <div class="read-modal hide">
+
+        </div>
+
+        <div class="items">
+            <button onclick="showModal()"> Add Book </button><button onclick='add10Books()'> Add 10</button>
+            <h1>Books</h1>
+            <div class="table-container">
+                <table border="1">
+
+                    <th onclick="onSortClicked('id')"> id </th>
+                    <th onclick="onSortClicked('title')"> title </th>
+                    <th onclick="onSortClicked('price')"> price </th>
+                    <th><button onclick="getAllTicked()">delete selected </button></th>
+
+                    <tr>
+                        <td> 0</td>
+                        <td> No books yet! </td>
+                        <td> 00.00 </td>
+                        <td> <button>Read</button><button>Update</button>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="buttons">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/storage-services.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+span {
+    cursor: default;
+}
+
+.manual {
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    border-style: ridge;
+    font-family: fantasy;
+}
+
+.manual-father {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+table {
+    margin: auto;
+    margin-top: 5px;
+}
+
+button {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px auto;
+    border: silver;
+    border-style: ridge;
+    font-family: fantasy;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(172, 170, 170);
+}
+
+.anim {
+    animation: shake 0.5s;
+}
+
+.buttons {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    /* box-shadow: 30px black; */
+    transition: 0.3s;
+    text-shadow: 1px 1px black;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+.cell:hover {
+    cursor: pointer;
+    background-color: rgb(172, 170, 170);
+}
+
+.cell img {
+    vertical-align: middle;
+    width: 25px;
+    height: auto
+}
+
+.health {
+    width: 180px;
+    margin: auto
+}
+
+.health img {
+    display: inline-block;
+    /* width: 50px;
+    margin: 15px auto; */
+}
+
+.smiley {
+    width: 40.5px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    margin: 5px auto;
+    cursor: pointer;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+.timer {
+    display: inline-block;
+    background-color: white;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    /* border-radius: 10%; */
+    /* margin: 10px auto; */
+    font-variant-numeric: slashed-zero;
+    border: silver;
+    border-style: ridge;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+.safe-click {
+    display: inline-block;
+    background-color: white;
+    width: 73px;
+    padding: 7px 5px 6px 5px;
+    text-align: center;
+    font-size: 14px;
+    border: silver;
+    border-style: ridge;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+div.bottom-dash {
+    width: 230px;
+    margin: 10px auto;
+}
+
+div.light {
+    width: 175px;
+    margin: 10px auto;
+}
+
+.light img {
+    cursor: pointer;
+}
+
+.record {
+    background-color: blanchedalmond;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

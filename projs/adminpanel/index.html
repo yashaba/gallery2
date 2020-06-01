@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="login">
+
+            <h1>login</h1>
+            <input class="username" type="text" placeholder="Username" />
+            <input class="pw" type="text" placeholder="Password">
+            <button onclick="onSignIn()">Sign in</button>
+            <button onclick="onSignUp()">Sign up</button>
+
+        </div>
+
+        <div class="hide secret  ">
+            <h2>User:</h2>
+            <button onclick="onLogOut()"> logout </button>
+            <img src="img/3.png">
+        </div>
+
+
+    </div>
+
+
+    <script src="js/storage.service.js"></script>
+    <script src="js/safe-content-services.js"></script>
+    <script src="js/safe-content-controller.js"></script>
+</body>
+
+</html>
